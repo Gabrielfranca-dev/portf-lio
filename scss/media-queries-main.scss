@@ -200,6 +200,20 @@
             min-height: 40vh;
         }
 
+        .projects {    
+            .card {
+                .oculto-content {
+                    .links {
+                        a {
+                            &:first-child {
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         .skills {
             min-height: 40vh;
         }    

@@ -128,6 +128,11 @@ main .projects .card .banner {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
+main .projects .card .banner img {
+  width: 100%;
+  height: 100%;
+  padding-left: 1px;
+}
 main .projects .card .titulo-projeto {
   z-index: 2;
   position: absolute;
@@ -138,7 +143,7 @@ main .projects .card .titulo-projeto {
 main .projects .card .oculto {
   position: absolute;
   bottom: -60px;
-  z-index: 10; /* Posição padrão da .oculto */
+  z-index: 10;
   height: 60px;
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
@@ -156,7 +161,7 @@ main .projects .card .oculto-content {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  z-index: 9999; /* Garante que a .oculto-content esteja no topo */
+  z-index: 9999;
   width: 80vw;
   height: 600px;
   display: none;
@@ -166,7 +171,7 @@ main .projects .card .oculto-content {
           backdrop-filter: blur(10px);
   border-radius: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  pointer-events: auto; /* Permite interação com o conteúdo interno */
+  pointer-events: auto;
 }
 main .projects .card .oculto-content .close-button {
   position: absolute;
@@ -178,8 +183,8 @@ main .projects .card .oculto-content .close-button {
   font-size: 24px;
   font-weight: bold;
   cursor: pointer;
-  z-index: 10000; /* Garante que o botão de fechar fique no topo */
-  pointer-events: auto; /* Garante que o botão seja clicável */
+  z-index: 10000;
+  pointer-events: auto;
   transition: transform 0.3s ease;
 }
 main .projects .card .oculto-content .close-button:hover {
@@ -195,8 +200,13 @@ main .projects .card .oculto-content .content .video {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10000; /* Garante que o vídeo fique no topo */
-  pointer-events: auto; /* Permite interação com o vídeo */
+  z-index: 10000;
+  pointer-events: auto;
+}
+main .projects .card .oculto-content .content .video iframe {
+  width: 95%;
+  height: auto;
+  aspect-ratio: 16/9;
 }
 main .projects .card .oculto-content .content .info {
   width: 50%;
@@ -253,13 +263,20 @@ main .projects .card .oculto-content .links a {
   border-radius: 5px;
   font-weight: 400;
 }
+main .projects .card .oculto-content .links a:first-child {
+  margin-left: 1.5%;
+}
 main .projects .card .oculto-content.visible {
   display: flex;
 }
 main .projects .card:hover {
-  z-index: 100; /* Eleva o card ao passar o mouse */
+  z-index: 100;
 }
-main .projects .card:hover .banner,
+main .projects .card:hover .banner {
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
 main .projects .card:hover .titulo-projeto {
   display: none;
 }
@@ -279,7 +296,7 @@ main .projects .card::after {
   width: 100%;
   display: block;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
 }
 main .projects.content-visible .card {
   z-index: -1; /* Coloca os outros cards no fundo */
