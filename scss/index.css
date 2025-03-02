@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #13131F;
+  background-color: #0D1B2A;
   color: white;
   font-family: "DM Sans", serif;
   font-weight: 500;
@@ -31,13 +31,13 @@ header, main, footer {
   padding: 10px 15px;
   color: white;
   border-radius: 30px;
-  border: 2px solid hsl(275, 78%, 53%);
+  border: 2px solid hsl(220, 78%, 53%);
   cursor: pointer;
   font-family: "Poppins", serif;
   transition: transform 0.2s ease, background 0.3s ease;
 }
 .btn:hover {
-  background-image: linear-gradient(90deg, #8257E6 0%, #A40EE4 92.32%);
+  background-image: linear-gradient(90deg, #1E90FF 0%, #0073E6 92.32%);
   transform: scale(0.95);
 }
 
@@ -90,14 +90,14 @@ header, main, footer {
 }
 
 ::-webkit-scrollbar-track {
-  background: #13131F;
+  background: #0D1B2A;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #552686;
+  background: #004080;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(275, 78%, 53%);
+  background: hsl(220, 78%, 53%);
 }/*# sourceMappingURL=index.css.map */

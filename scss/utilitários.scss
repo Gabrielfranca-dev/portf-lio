@@ -3,21 +3,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 // Variáveis de cores
-$bg-body: #13131F;
-$bg-header: #13131F;
+$bg-body: #0D1B2A;  // Azul bem escuro (substituindo o roxo escuro original)
+$bg-header: #0D1B2A;  // Mesmo tom do body para manter a harmonia
 $text-white: white;
 $text-gray: rgb(130, 130, 130);
 $text-black: rgb(19, 19, 31);
-$border: hsl(275, 78%, 53%);
-$bg-menu: #8257E6;
-$gradient: linear-gradient(90deg, #8257E6 0%, #A40EE4 92.32%);
-$scroll-bg: #13131F;
-$scroll-bar: #552686;
-$scroll-hover: hsl(275, 78%, 53%);
+$border: hsl(220, 78%, 53%);
+$bg-menu: #1E90FF;  // Azul vibrante
+$gradient: linear-gradient(90deg, #1E90FF 0%, #0073E6 92.32%); 
+$scroll-bg: #0D1B2A;
+$scroll-bar: #004080;
+$scroll-hover: hsl(220, 78%, 53%);
 $bg-cards: #212121;
 $bg-body-white: #F9F9F9;
-$text-purple: #8257e6;
-$text-purple-oculot-content: #6a5acd;
+$text-purple: #1E90FF;
+$text-purple-oculot-content: #4682B4; // Azul aço (equivalente ao azul médio)
 
 $font-1: "DM Sans", serif;
 $font-2: "Poppins", serif;
