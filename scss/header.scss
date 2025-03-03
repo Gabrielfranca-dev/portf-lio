@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: u.$bg-header;
+    background-color: u.$cor-1; // Azul bem escuro (background-header)
     z-index: 9;
     position: fixed;
 
@@ -17,24 +17,23 @@ header {
         align-items: center;
         padding: 25px 0;
 
-
         div {
             &:first-child {
                 width: 35px;
                 height: 35px;
 
                 &:hover {
-                    background-color: u.$bg-menu;
+                    background-color: u.$cor-6; // Azul vibrante (background-menu)
                     border-radius: 50%;
 
                     i {
-                        color: u.$bg-body;
+                        color: u.$cor-1; // Azul bem escuro (background-body)
                     }
                 }
 
                 i {
                     font-size: 25px;
-                    color: u.$border;
+                    color: u.$cor-5; // Azul (border-color)
                 }
             }
 
@@ -43,7 +42,7 @@ header {
                     font-size: 20px;
                     font-weight: 700;
                     line-height: 27px;
-                    color: u.$text-white;
+                    color: u.$cor-2; // Branco (text-color-white)
                     text-decoration: none;
                 }
             }
@@ -70,7 +69,7 @@ header {
                     display: flex;
                     width: 100%;
                     height: 100%;
-                    background-color: u.$border;
+                    background-color: u.$cor-5; // Azul (border-color)
                     border-radius: 25px;
                     cursor: pointer;
                     padding: 5px;
@@ -95,7 +94,7 @@ header {
                     left: 7px;
                     width: 17px;
                     height: 17px;
-                    background-color: u.$bg-header;
+                    background-color: u.$cor-1; // Azul bem escuro (background-header)
                     border-radius: 50%;
                     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
                     transition: transform 0.3s ease;
@@ -121,7 +120,7 @@ header {
     }
 
     &:after {
-        background-image: u.$gradient;
+        background-image: u.$cor-7; // Gradiente (gradient-background)
         content: "";
         height: 1px;
         width: 100%;
@@ -154,7 +153,7 @@ header {
     a {
         text-decoration: none;
         text-transform: capitalize;
-        color: u.$text-white;
+        color: u.$cor-2; // Branco (text-color-white)
 
         &:hover {
             text-decoration: underline;

@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-color: #13131F;
+  background-color: #0D1B2A;
   z-index: 9;
   position: fixed;
 }
@@ -22,21 +22,21 @@ header .contein div:first-child {
   height: 35px;
 }
 header .contein div:first-child:hover {
-  background-color: #8257E6;
+  background-color: #1E90FF;
   border-radius: 50%;
 }
 header .contein div:first-child:hover i {
-  color: white;
+  color: #0D1B2A;
 }
 header .contein div:first-child i {
   font-size: 25px;
-  color: hsl(275, 78%, 53%);
+  color: #4A90E2;
 }
 header .contein div:nth-child(2) a {
   font-size: 20px;
   font-weight: 700;
   line-height: 27px;
-  color: white;
+  color: #FFFFFF;
   text-decoration: none;
 }
 header .contein div:last-child {
@@ -59,7 +59,7 @@ header .contein div:last-child .toggle-label {
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: hsl(275, 78%, 53%);
+  background-color: #4A90E2;
   border-radius: 25px;
   cursor: pointer;
   padding: 5px;
@@ -82,7 +82,7 @@ header .contein div:last-child .toggle-ball {
   left: 7px;
   width: 17px;
   height: 17px;
-  background-color: #13131F;
+  background-color: #0D1B2A;
   border-radius: 50%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
@@ -100,7 +100,7 @@ header .contein div:last-child .toggle-checkbox:checked + .toggle-label .toggle-
   color: white;
 }
 header:after {
-  background-image: linear-gradient(90deg, #8257E6 0%, #A40EE4 92.32%);
+  background-image: linear-gradient(90deg, #1E90FF 0%, #0073E6 92.32%);
   content: "";
   height: 1px;
   width: 100%;
@@ -131,7 +131,7 @@ header:after {
 .nav-bar-hidden a {
   text-decoration: none;
   text-transform: capitalize;
-  color: white;
+  color: #FFFFFF;
 }
 .nav-bar-hidden a:hover {
   text-decoration: underline;

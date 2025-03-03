@@ -1,14 +1,14 @@
 @use 'utilitários.scss' as u;
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: u.$bg-body;
-    color: u.$text-white;
-    font-family: u.$font-1;
+    background-color: u.$cor-1; // Azul bem escuro (background-body)
+    color: u.$cor-2; // Branco (text-color-white)
+    font-family: u.$font-family-primary;
     font-weight: 500;
     font-style: normal;
     margin: 0;
@@ -28,15 +28,16 @@ header, main, footer {
 .btn {
     background-color: transparent;
     padding: 10px 15px;
-    color: u.$text-white;
+    color: u.$cor-2; // Branco (text-color-white)
     border-radius: 30px;
-    border: 2px solid u.$border;
+    border: 2px solid u.$cor-5; // Azul (border-color)
     cursor: pointer;
-    font-family: u.$font-2;
+    font-family: u.$font-family-secondary;
+    font-size: u.$font-size-paragraph;
     transition: transform 0.2s ease, background 0.3s ease;
-    
+
     &:hover {
-        background-image: u.$gradient;
+        background-image: u.$cor-7; // Gradiente (gradient-background)
         transform: scale(0.95);
     }
 }
@@ -45,48 +46,45 @@ header, main, footer {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     &:hover {
-        transform: scale(1.1); // Aumenta o tamanho da div
-        
+        transform: scale(1.1);
     }
 }
 
 .typing-effect {
-  white-space: nowrap; /* Evita quebra de linha */
-  overflow: hidden; /* Esconde o texto que não cabe na área visível */
-  width: 100%; /* Define a largura completa após digitar */
-  animation: typing 2.5s steps(30, end), blink 0.5s step-end infinite; /* Digitação + cursor */
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    font-size: u.$font-size-h3;
+    animation: typing 2.5s steps(30, end), blink 0.5s step-end infinite;
 }
-  
-/* Animação para simular a digitação */
+
 @keyframes typing {
-  from {
-    width: 0; /* Começa com texto oculto */
-  }
-  to {
-    width: 100%; /* Mostra o texto completo */
-  }
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }
 
-/* Animação para o cursor piscante */
 @keyframes blink {
-  from {
-    border-color: transparent;
-  }
-  to {
-    border-color: u.$text-white; /* Alterna entre transparente e preto */
-  }
-}
-  
-.slide-in {
-  opacity: 0; /* Inicialmente invisível */
-  transform: translateX(-150px); /* Começa mais fora da tela à esquerda */
-  transition: transform 1s ease-out, opacity 1s ease-out; /* Efeito mais lento */
+    from {
+        border-color: transparent;
+    }
+    to {
+        border-color: u.$cor-2; // Branco (text-color-white)
+    }
 }
 
-/* Quando o elemento entra na tela */
+.slide-in {
+    opacity: 0;
+    transform: translateX(-150px);
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
 .slide-in.active {
-  opacity: 1;
-  transform: translateX(0); /* Move para a posição original */
+    opacity: 1;
+    transform: translateX(0);
 }
 
 ::-webkit-scrollbar {
@@ -94,14 +92,14 @@ header, main, footer {
 }
 
 ::-webkit-scrollbar-track {
-    background: u.$scroll-bg;
+    background: u.$cor-1; // Azul bem escuro (scroll-background)
 }
 
 ::-webkit-scrollbar-thumb {
-    background: u.$scroll-bar;
+    background: u.$cor-8; // Azul escuro (scroll-bar-color)
     border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: u.$scroll-hover;
+    background: u.$cor-5; // Azul (scroll-bar-hover)
 }

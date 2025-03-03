@@ -3,21 +3,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 // Variáveis de cores
-$bg-body: #0D1B2A;  // Azul bem escuro (substituindo o roxo escuro original)
-$bg-header: #0D1B2A;  // Mesmo tom do body para manter a harmonia
-$text-white: white;
-$text-gray: rgb(130, 130, 130);
-$text-black: rgb(19, 19, 31);
-$border: hsl(220, 78%, 53%);
-$bg-menu: #1E90FF;  // Azul vibrante
-$gradient: linear-gradient(90deg, #1E90FF 0%, #0073E6 92.32%); 
-$scroll-bg: #0D1B2A;
-$scroll-bar: #004080;
-$scroll-hover: hsl(220, 78%, 53%);
-$bg-cards: #212121;
-$bg-body-white: #F9F9F9;
-$text-purple: #1E90FF;
-$text-purple-oculot-content: #4682B4; // Azul aço (equivalente ao azul médio)
+$cor-1: #0D1B2A;
+$cor-2: #FFFFFF;
+$cor-3: #828282;
+$cor-4: #13131F;
+$cor-5: #4A90E2;
+$cor-6: #1E90FF;
+$cor-7: linear-gradient(90deg, #1E90FF 0%, #0073E6 92.32%);
+$cor-8: #004080;
+$cor-9: #212121;
+$cor-10: #F9F9F9;
+$cor-11: #4682B4;
 
-$font-1: "DM Sans", serif;
-$font-2: "Poppins", serif;
+// Variáveis de fontes
+$font-family-primary: "DM Sans", serif;
+$font-family-secondary: "Poppins", serif;
+
+// Variáveis de tamanho de fonte
+$font-size-h1: 2.5rem;
+$font-size-h2: 2rem;
+$font-size-h3: 1.75rem;
+$font-size-h4: 1.5rem;
+$font-size-h5: 1.25rem;
+$font-size-h6: 1rem;
+$font-size-paragraph: 1rem;
+$font-size-span: 0.875rem;

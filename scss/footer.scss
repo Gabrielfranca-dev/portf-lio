@@ -1,20 +1,29 @@
 @use 'utilitários.scss' as u;
 
+// Estilo do footer
 footer {
     display: flex;
     position: relative;
+    flex-direction: column;
 
     p {
-        padding: 15px 0;
-        font-size: 20px;
+        padding: 5px 0;
+        font-size: 15px;
+        width: 80%;
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center; // Mudei para center para melhor centralizar os itens dentro do parágrafo
 
         a {
-            color: u.$text-purple;
+            color: u.$cor-5; // Azul (cor-5)
+            text-decoration: none; // Remover underline
+            margin-left: 5px; // Espaço entre o texto e o link
         }
     }
 
     &::before {
-        background-image: u.$gradient;
+        background-image: u.$cor-7; // Gradiente (cor-7)
         content: "";
         height: 3px;
         width: 100%;

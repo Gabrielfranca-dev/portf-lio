@@ -1,7 +1,7 @@
 @use 'utilitários.scss' as u;
 
 main {
-    font-family: u.$font-2;
+    font-family: u.$font-family-secondary;
 
     .home, .about, .skills, .projects, .contacts {
         min-height: 100vh;
@@ -13,7 +13,7 @@ main {
         align-items: center;
 
         .text-color {
-            color: u.$border;
+            color: u.$cor-5; // Azul (border-color)
         }
 
         div {
@@ -22,8 +22,8 @@ main {
                 flex-direction: column;
                 text-align: left;
 
-                h1, p{
-                    font-size: 50px;
+                h1, p {
+                    font-size: u.$font-size-h1;
                     font-weight: 500;
                 }
 
@@ -38,7 +38,7 @@ main {
                 }
 
                 p {
-                    color: u.$border;
+                    color: u.$cor-5; // Azul (border-color)
                 }
             }
 
@@ -61,7 +61,7 @@ main {
         }
 
         h1 {
-            font-size: 35px;
+            font-size: u.$font-size-h2;
             margin-bottom: 10px;
         }
     }
@@ -70,7 +70,7 @@ main {
         margin-bottom: 50px;
 
         h1 {
-            font-size: 35px;
+            font-size: u.$font-size-h2;
             margin-bottom: 40px;
         }
 
@@ -88,9 +88,9 @@ main {
                 justify-content: center;
             
                 h1 {
-                    font-size: 17px;
+                    font-size: 20px;
                     font-weight: 500;
-                    color: u.$text-white;
+                    color: u.$cor-2; // Branco (text-color-white)
                     margin: 10px 0 5px 0;
                 }
             
@@ -105,11 +105,11 @@ main {
         .item {
             height: 120px;
             width: 120px;
-            background-color: u.$bg-cards;
+            background-color: u.$cor-9; // Cinza escuro (background-cards)
             border-top-left-radius: 30px;
     
             &::after {
-                background-image: u.$gradient;
+                background-image: u.$cor-7; // Gradiente (gradient-background)
                 content: "";
                 height: 3px;
                 display: block;
@@ -124,7 +124,7 @@ main {
         flex-direction: column;
     
         .titulo {
-            font-size: 35px;
+            font-size: u.$font-size-h2;
             margin-bottom: 20px;
         }
     
@@ -176,6 +176,7 @@ main {
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
+                    font-size: u.$font-size-h4; /* Ajuste o tamanho do título */
                 }
             }
         
@@ -256,13 +257,13 @@ main {
                         text-align: justify;
                         font-weight: 500;
                         color: #888;
-                        font-size: 15px;
+                        font-size: u.$font-size-paragraph;
         
                         h1 {
                             text-align: center;
                             margin: 10px 0;
-                            color: u.$text-purple-oculot-content;
-                            font-size: 25px;
+                            color: u.$cor-11; // Azul aço (text-color-purple-content)
+                            font-size: u.$font-size-h3;
                         }
         
                         p {
@@ -275,16 +276,16 @@ main {
                             }
         
                             ::-webkit-scrollbar-track {
-                                background: u.$scroll-bg;
+                                background: u.$cor-1; // Azul bem escuro (scroll-background)
                             }
         
                             ::-webkit-scrollbar-thumb {
-                                background: u.$scroll-bar;
+                                background: u.$cor-8; // Azul escuro (scroll-bar-color)
                                 border-radius: 5px;
                             }
         
                             ::-webkit-scrollbar-thumb:hover {
-                                background: u.$scroll-hover;
+                                background: u.$cor-5; // Azul (scroll-bar-hover)
                             }
                         }
         
@@ -296,7 +297,7 @@ main {
         
                         span {
                             margin: 0px 0px 0px 15px;
-                            color: u.$text-purple-oculot-content;
+                            color: u.$cor-11; // Azul aço (text-color-purple-content)
                         }
                     }
                 }
@@ -311,7 +312,7 @@ main {
                         margin: 0 10px 20px 15px;
                         color: white;
                         text-decoration: none;
-                        background-image: linear-gradient(90deg, #1E90FF 0%, #0073E6 92.32%);
+                        background-image: u.$cor-7; // Gradiente (gradient-background)
                         padding: 5px 15px;
                         border-radius: 5px;
                         font-weight: 400;
@@ -352,7 +353,7 @@ main {
             }
         
             &::after {
-                background-image: u.$gradient;
+                background-image: u.$cor-7; // Gradiente (gradient-background)
                 content: "";
                 height: 3px;
                 width: 100%;
@@ -361,8 +362,6 @@ main {
                 bottom: -1px;
             }
         }
-        
-        
     
         /* Quando .oculto-content estiver visível */
         &.content-visible {
@@ -378,7 +377,7 @@ main {
         align-items: center;
 
         h1 {
-            font-size: 35px;
+            font-size: u.$font-size-h2;
         }
     
         .content {
@@ -395,7 +394,7 @@ main {
 
             p {
                 a {
-                    color: u.$text-white;
+                    color: u.$cor-2; // Branco (text-color-white)
                     text-decoration: none;
 
                     &:hover {
@@ -410,7 +409,7 @@ main {
             height: 80px;
             margin-bottom: 5px;
             border-radius: 50%;
-            background-color: u.$bg-cards;
+            background-color: u.$cor-9; // Cinza escuro (background-cards)
             position: relative;
 
             img {

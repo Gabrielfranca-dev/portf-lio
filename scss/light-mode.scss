@@ -2,28 +2,31 @@
 
 .light-mode {
     main {
-        background-color: u.$bg-body-white;
-        color: u.$text-black;
+        background-color: u.$cor-10; // Branco suave (background-body-white)
+        color: u.$cor-4; // Preto (text-color-black)
     }
 
     .home {
         input {
-            color: u.$text-black;
+            color: u.$cor-4; // Preto (text-color-black)
             font-weight: 500;
-
+            font-size: u.$font-size-paragraph;
             &:hover {
-                color: u.$text-white;
+                color: u.$cor-2; // Branco (text-color-white)
             }
         }
     }
 
     .projects {
         h3 {
-            color: u.$text-white;
+            color: u.$cor-2; // Branco (text-color-white)
+            font-size: u.$font-size-h3;
         }
+
         .oculto {
             p {
-                color: u.$text-white;
+                color: u.$cor-2; // Branco (text-color-white)
+                font-size: u.$font-size-paragraph;
             }
         }
     }
@@ -32,7 +35,8 @@
         .info {
             p {
                 a {
-                    color: u.$text-black;
+                    color: u.$cor-4; // Preto (text-color-black)
+                    font-size: u.$font-size-span;
                 }
             }
         }
